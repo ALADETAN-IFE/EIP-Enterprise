@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "pixelNES";
+  src: url("./assets/font/Pixel_NES.otf");
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pixelNES, Arial, Helvetica, sans-serif;
+  /*background: #EB5928; */
+}
+
+.NavigationRoutBarWrapperActive{
+  width: 100%;
+ min-height: 70px;
+ /* border-radius: 10px; */
+ display: flex;
+ align-items: center;
+ gap:8px;
+ padding: 14px;
+ cursor: pointer;
+ /* background: rgba(161, 161, 161, 0.242); */
+ background: #F7E9E6;
+ background: #0056b3;
+ background: #007BFF;
+ color: #fff;
+ /* border: 2px solid rgb(14, 117, 216); */
+ /* box-shadow: 0px 5px 5px rgba(179, 169, 169, 0.4); */
+ text-decoration: none;
+
+}
+
+
+
+/* npm run dev */
+.NavigationRoutBarWrapperNotActive{
+   width: 100%;
+  min-height: 70px;
+  /* border-radius: 10px; */
+  display: flex;
+  align-items: center;
+  gap:8px;
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.NavigationRoutBarWrappeClosedActive{
+  width: 100%;
+ min-height: 70px;
+ /* border-radius: 10px; */
+ display: flex;
+ align-items: center;
+ justify-content:center;
+ /* gap:8px; */
+ padding: 14px;
+ cursor: pointer;
+ background: #F7E9E6;
+ background: #0056b3;
+ background: #007BFF;
+ color: #fff;
+ text-decoration: none;
+
+}
+
+.NavigationRoutBarWrappeClosedNotActive{
+   width: 100%;
+  min-height: 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  /* gap:8px; */
+  padding: 14px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.removeTaskCard{
+  animation-name: removeTaskCard;
+  animation-delay: 400ms;
+  animation-duration: 400ms;
+  animation-timing-function: ease-out;
+  animation-direction: normal;
+}
+
+/* @keyframes removeTaskCard {
+  from{
+    transform:translateY(0px)
+  }to{
+    transform:translateY(100px)
+  }
+} */
+/* @keyframes removeTaskCard {
+  from{
+    transform:translateX(0%);
+  }to{
+    transform:translateX(100%);
+  }
+} */
+
